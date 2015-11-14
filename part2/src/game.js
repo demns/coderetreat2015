@@ -1,12 +1,4 @@
 var Game = function () {
-	var q = [
-		[0,0,0,0,0],
-		[0,0,0,0,0],
-		[0,0,0,0,0],
-		[0,0,0,1,0],
-		[0,0,0,0,0]
-	];
-
 	function getValue(q, i, j) {
 		return q[i][j];
 	}
@@ -75,8 +67,16 @@ var Game = function () {
 	}
 }
 
+var q = [
+	[0,0,0,0,0],
+	[0,0,0,0,0],
+	[0,0,0,0,0],
+	[0,0,0,1,0],
+	[0,0,0,0,0]
+];
+
 myGame = new Game();
-myGame.game_cycle();
+myGame.game_cycle(q);
 
 
 module.exports = Game;
