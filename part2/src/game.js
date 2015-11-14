@@ -132,7 +132,7 @@ var Game = function () {
 }
 
 
-var SIZE = 20;
+var SIZE = 25;
 
 myGame = new Game();
 myGame.init(SIZE);
