@@ -53,4 +53,24 @@ describe('#killIfMoreThanThreeAlive()', function () {
       assert.equal(a_re[1][1], game.killIfMoreThanThreeAlive(a)[1][1]);
     });
   });
+
+
+describe('#countNeigbourd()', function () {
+    it('countNeigbourd', function () {
+      var a = [
+        [0, 1, 0], 
+        [1, 1, 1], 
+        [0, 1, 0]
+      ];
+
+      assert.equal(4, game.countNeigbourd(a, 1, 1));
+      assert.equal(3, game.countNeigbourd(a, 0, 0));
+      assert.equal(3, game.countNeigbourd(a, 0, 1));
+    });
+  });
+
+  
+  
+
+
 });
